@@ -38,7 +38,7 @@ const Home = () => {
         className='text-overlay'>
           <h1>Hola soy Fátima Cosme</h1>
           <h2>Frontend React y Swift</h2> 
-          <p>Comencé en el desarrollo de manera autodidacta y poco a poco fui entendiendo las grandes posibilidades que ofrece este campo. En 2023, me lancé a cursar una formación de 750 horas de Factoria F5 Fullstack. Actualmente, desarrollo proyectos como freelance, mientras sigo aprendiendo y formándome</p>
+          <p>Comencé en el desarrollo de manera autodidacta y poco a poco, fui entendiendo las grandes posibilidades que ofrece este campo. En 2023, me lancé a cursar una formación de 750 horas de Factoria F5 Fullstack. Actualmente, desarrollo proyectos como freelance, mientras sigo aprendiendo y formándome</p>
           <p>Encontrar nuevos retos y probarme en cada proyecto, es uno de los motivos que me enganchó al mundo de la programción</p>
         
       </motion.div>
