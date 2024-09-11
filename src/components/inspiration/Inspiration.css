@@ -24,7 +24,7 @@
 	height: 200px;
 	transform-style: preserve-3d;
 	animation: rotate 20s infinite linear;
-    margin:0 auto;
+  margin:0 auto;
 }
 
 .cube {
@@ -67,4 +67,42 @@ a {
     color: white;
     text-decoration: none;
     line-height: 200px; /* Centra el texto verticalmente */
+  }
+
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  a:active {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width: 900px) {
+
+    .container-inspiration-cube div {
+      margin-bottom: 5rem;
+      
+    }
+
+  .container-inspiration-cube h1 {
+      font-size: 1.5em;
+    }
+
+  .container-inspiration-cube p {
+      font-size: 1em;
+    }
+
+  .scene {
+      width: 100px;
+      height: 100px;
+    }
+
+
+.front  { transform: rotateY(  0deg) translateZ(50px); background: #a047ff; }
+.back   { transform: rotateY(180deg) translateZ(50px); background: #7953a3dd; }
+.right  { transform: rotateY( 90deg) translateZ(50px); background: #af80e1; }
+.left   { transform: rotateY(-90deg) translateZ(50px); background: #523e6ca7; }
+.top    { transform: rotateX( 90deg) translateZ(50px); background: #6911c7f3; }
+.bottom { transform: rotateX(-90deg) translateZ(50px); background: #c169ff; }
+
   }

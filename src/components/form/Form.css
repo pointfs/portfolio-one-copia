@@ -10,14 +10,14 @@
   .container-contact h1 {
     text-align: center;
     margin-bottom: 1.5em;
-    font-size:2.5em;
+    font-size:2;
     color: #333;
   }
 
   .container-contact p {
     text-align: center;
     margin-bottom: 1.5em;
-    font-size:1.5em;
+    font-size:2em;
     color: #333;
   }
   
@@ -37,16 +37,20 @@
   .contact-content {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 2em;
   }
   
   .profile-image {
+    
     width:15vw;
     max-width: 600px;
+    min-width: 200px;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    margin: 4em;
+    
+    
   }
   
   form {
@@ -56,8 +60,10 @@
     border-radius: 8px;
     background-color: #f9f9f9;
     width: 50vw;
-    margin-left:15vw;
-
+    max-width: 600px;
+    min-width:300px;
+    gap: 1em;
+    
   }
 
   
@@ -65,7 +71,7 @@
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 0.75em;
     width: 100%;
     margin-bottom: 1em;
     
@@ -97,4 +103,15 @@
   .error {
     color: red;
     font-size: 0.875em;
+  }
+
+  @media (max-width: 900px) {
+    .container-contact p{
+      font-size: 1em;
+    }
+
+    .container-contact h1{
+      font-size: 1.5em;
+    }
+
   }
