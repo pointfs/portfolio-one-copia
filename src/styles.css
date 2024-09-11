@@ -85,6 +85,9 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    width: 70%;
+    height: 60%;
+    
   }
   
   .text-overlay h1{
@@ -92,7 +95,7 @@
     padding: 0.5em;
     background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 5px;
-    font-size: 3rem;
+    font-size: 3vw;
   }
   
   .text-overlay h2 {
@@ -100,7 +103,7 @@
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 2vw;
   }
 
   .text-overlay p {
@@ -108,7 +111,7 @@
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   .section {
