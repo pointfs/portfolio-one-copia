@@ -35,7 +35,7 @@ const Form = () => {
     const formErrors = validate();
     if (Object.keys(formErrors).length === 0) {
       alert('Formulario enviado!');
-      // Aquí puedes manejar el envío del formulario
+      
     } else {
       setErrors(formErrors);
     }
