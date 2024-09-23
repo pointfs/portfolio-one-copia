@@ -3,6 +3,7 @@ import ButtonTech from '../../components/buttoms/buttomtech/ButtomTech';
 import ButtonProjects from '../../components/buttoms/buttomprojects/ButtomProjects';
 import ButtonHome from '../../components/buttoms/buttomhome/ButtomHome';
 import ButtonInspiration from '../../components/buttoms/buttominspiration/ButtomInspiration';
+import ButtonContact from '../../components/buttoms/buttomcontact/ButtomContact';
 
 import hacker3 from '../../assets/icons/hacker3.webp';
 
@@ -13,18 +14,22 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div className="navbar">
-      <img className='logo-nav' src={hacker3} alt="logo" />
+    <div className="nav">
+      <img src={hacker3} alt="logo" className="hacker3" onClick={scrollToTop}/>
       <button className="hamburger" onClick={toggleMenu}>
-        &#9776;
+        
       </button>
       <ul className={`menu ${menuOpen ? 'open' : ''}`}>
         <li><ButtonHome /></li>
         <li><ButtonProjects /></li>
         <li><ButtonTech /></li>
         <li><ButtonInspiration /></li>
-        <button className="button-mail-nav" a href="mailto:fatimacosme81@gmail.com">Contacto</button>
+        <li><ButtonContact/></li>
       </ul>
     </div>
   );

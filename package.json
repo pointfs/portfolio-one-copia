@@ -14,6 +14,8 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.0.2",
     "@mui/material": "^6.0.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
     "framer-motion": "^11.5.4",
     "motion-frame": "^2.0.2",
     "nodemailer": "^6.9.15",

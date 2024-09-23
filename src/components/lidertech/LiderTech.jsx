@@ -22,6 +22,8 @@ import './LiderTech.css';
 
 
   const LiderTech = () => {
+    
+
     const settings = {
       dots: true,
       infinite: true,
@@ -30,14 +32,14 @@ import './LiderTech.css';
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 0,
-      cssEase: 'linear', // Transición lineal para desplazamiento continuo
+      cssEase: 'linear',
     
       
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 2,
             infinite: true,
             dots: true
@@ -46,7 +48,7 @@ import './LiderTech.css';
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 2,
             initialSlide: 2
           }
@@ -54,10 +56,17 @@ import './LiderTech.css';
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
         }
+      }
       ]
     };
     return (
@@ -65,7 +74,8 @@ import './LiderTech.css';
 
       <h1 className="lider-tech-title">Skills</h1>
       <div className="lider-tech-container">
-        <Slider {...settings}>
+      
+        <Slider  {...settings}>
           <div className='tech'>
             <img src={html} alt="HTML" />
             <span class="tooltip-text">HTML</span>
@@ -76,7 +86,7 @@ import './LiderTech.css';
           </div>
           <div className='tech'>
             <img src={javascript} alt="JavaScript" />
-            <span class="tooltip-text">JavaScript</span>
+            <span class="tooltip-text">JS</span>
           </div>
           <div className='tech'>
             <img src={react} alt="React" />
@@ -120,6 +130,7 @@ import './LiderTech.css';
           </div>
 
         </Slider>
+       
       </div>
     </div>
     );

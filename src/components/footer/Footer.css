@@ -34,3 +34,26 @@ footer {
     font-size: 1.2em;
     margin-right: 2em;
 }
+
+@media (max-width: 900px) {
+    .copyright p {
+        font-size: 1rem;
+        margin:0 auto;
+    }
+}
+
+.rrss-logos a:hover {
+    color: #a047ff;
+}
+
+.rrss-logos a img {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.rrss-logos button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
