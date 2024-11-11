@@ -1,4 +1,3 @@
-/* Estilo de la barra de navegación principal */
 .navbar {
   display: flex;
   align-items: center;
@@ -13,7 +12,7 @@
   z-index: 1000;
 }
 
-/* Icono del menú hamburguesa */
+
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -28,7 +27,7 @@
   transition: transform 0.3s ease;
 }
 
-/* Estilo para la lista de enlaces */
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -52,14 +51,12 @@
   color: #ffc107;
 }
 
-/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
-  /* Mostrar el menú hamburguesa en pantallas pequeñas */
+  
   .menu-icon {
     display: flex;
   }
   
-  /* Ocultar los enlaces al principio */
   .nav-links {
     display: flex;
     position: fixed;
@@ -76,7 +73,6 @@
     transition: transform 0.3s ease;
   }
 
-  /* Mostrar el menú cuando se activa */
   .nav-links.active {
     transform: translateX(0);
   }

@@ -16,14 +16,13 @@ const Nav = () => {
 
   return (
     <nav className="navbar">
-      {/* Menú Hamburguesa */}
+
       <div className="menu-icon" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-      {/* Menú de enlaces */}
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><ButtonHome /></li>
         <li><ButtonProjects /></li>
