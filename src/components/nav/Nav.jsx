@@ -5,36 +5,26 @@ import ButtonHome from '../buttoms/ButtomHome';
 import ButtonInspiration from '../buttoms/ButtomInspiration';
 import ButtonContact from '../buttoms/ButtomContact';
 
-import hacker3 from '../../assets/icons/hacker1.webp';
-
 import './Nav.css';
 
+const Nav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
-  const Nav = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen); 
-    };
-  
-    const closeMenu = () => {
-      setIsMenuOpen(false); 
-    };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); 
+  };
 
   return (
     <nav className="navbar">
-   
+      {/* Menú Hamburguesa */}
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
 
-    <div className="menu-icon" onClick={toggleMenu}>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-    </div>
-
-    <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-
+      {/* Menú de enlaces */}
+      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><ButtonHome /></li>
         <li><ButtonProjects /></li>
         <li><ButtonTech /></li>
