@@ -72,7 +72,7 @@ const Form = () => {
         ></textarea>
         {errors.mensaje && <span className='error'>{errors.mensaje}</span>}
       </div>
-      <button type='submit'>Enviar</button>
+      <button className='button-form-mail' type='submit'>Enviar</button>
     </form>
 
   );

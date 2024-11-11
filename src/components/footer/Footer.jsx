@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
       </div>
       <div className='copyright'>
-        <p>Made in Fátima Cosme</p>
+        <p>Made in Fátima Cosme 2024</p>
       </div>
     </footer>
 

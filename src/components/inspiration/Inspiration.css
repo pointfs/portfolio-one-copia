@@ -44,12 +44,12 @@
 	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.front  { transform: rotateY(  0deg) translateZ(100px); background: #a047ff; }
+.front  { transform: rotateY(  0deg) translateZ(100px); background: #ff47ff; }
 .back   { transform: rotateY(180deg) translateZ(100px); background: #7953a3dd; }
-.right  { transform: rotateY( 90deg) translateZ(100px); background: #af80e1; }
+.right  { transform: rotateY( 90deg) translateZ(100px); background: #1f5793; }
 .left   { transform: rotateY(-90deg) translateZ(100px); background: #523e6ca7; }
 .top    { transform: rotateX( 90deg) translateZ(100px); background: #6911c7f3; }
-.bottom { transform: rotateX(-90deg) translateZ(100px); background: #c169ff; }
+.bottom { transform: rotateX(-90deg) translateZ(100px); background: #7869ff; }
 
 @keyframes rotate {
 	0% {

@@ -1,59 +1,53 @@
+
 footer {
-    display: flex;
-    justify-content: space-between;
-    height: 10%;
-    left: 0;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 0.75rem 0;
+    position: relative;
+    width: 100%;
     bottom: 0;
-    margin-top: 4em;
-    width: 100vw
-}
-
-.rrss-logos {
+  }
+  
+  .rrss-logos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2em;
-}
+    justify-content: center;
+    gap: 1rem; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .rrss-logos a {
+    color: white;
+    font-size: 1.5rem; 
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .rrss-logos a:hover {
+    color: #ffc107;
+    transform: scale(1.1); 
+  }
 
-.rrss-logos a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 2em;
-    justify-content: space-evenly;
-    width: 20px;
-    color:black
-}
-
-
-.copyright {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1.2em;
-    margin-right: 2em;
-}
-
-@media (max-width: 900px) {
-    .copyright p {
-        font-size: 1rem;
-        margin:0 auto;
+  .copyright {
+    font-size: 0.75rem; 
+    color: #cccccc;
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 600px) {
+    .rrss-logos {
+      gap: 0.75rem;
     }
-}
-
-.rrss-logos a:hover {
-    color: #a047ff;
-}
-
-.rrss-logos a img {
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-}
-
-.rrss-logos button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
+  
+    .rrss-logos a {
+      font-size: 1.25rem;
+    }
+  
+    .copyright p {
+      font-size: 0.7rem;
+    }
+  }
+  

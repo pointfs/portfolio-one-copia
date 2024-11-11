@@ -61,8 +61,8 @@ const Home = () => {
       <h1>Contacto</h1>
       <p>Si te gustó mi trabajo o quieres que trabajemos juntos, no dudes en contactarme</p>
       <div className='contact-content'>
+      <img src={Profile} alt="Profile" className='profile-image'/>
         <Form/>
-        <img src={Profile} alt="Profile" className='profile-image'/>
       </div>
     </section>
   </>
