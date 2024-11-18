@@ -47,10 +47,6 @@
   transition: color 0.3s ease;
 }
 
-.nav-links li button:hover {
-  color: #ffc107;
-}
-
 @media (max-width: 768px) {
   
   .menu-icon {
@@ -63,12 +59,13 @@
     top: 0;
     right: 0;
     height: auto;
-    width: 50%;
+    width: 40%;
     background-color: #1f1f1f;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     padding-top: 4rem;
+    padding-bottom: 2rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
   }

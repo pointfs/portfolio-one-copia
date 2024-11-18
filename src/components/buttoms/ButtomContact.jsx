@@ -24,7 +24,7 @@ const StyledButton = styled.button`
     height: 100%;
     background: linear-gradient(90deg, #3a0ca3, #ff006e, #3a0ca3);
     transform: translateX(-100%);
-    transition: transform 0.6s ease; /* Transición más lenta para suavizar el efecto */
+    transition: transform 0.6s ease;
     z-index: 1;
     border-radius: inherit;
   }
