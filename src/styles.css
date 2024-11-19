@@ -130,14 +130,14 @@
 .container-contact {
   width: 100vw;
   padding: 3rem;
-  background-color: #fff;
+  background-color:var(--bg);
+  background-color: inherit;
   text-align: center;
   
 }
 
 .bg-dark .container-contact {
-  color: var(--bg);
-  background-color: var(--bg);
+  background-color:var(--bg);
 }
 
 
@@ -163,6 +163,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 
 .contact-content .profile-image {
