@@ -3,25 +3,40 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  
+}
+
+.container {
+  width: 100vw;
+  margin:0;
+  padding: 0;
 }
 
 
 .container-img {
   position: relative;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
+  margin:0;
+
 }
+
+
 
 .image-container {
   position: relative;
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
 
 .background-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
 .text-overlay {
@@ -51,9 +66,14 @@
 
 /* Sección LiderTech */
 .container-tech {
+  width: 100vw;
   padding: 2rem;
   background-color: #f7f7f7;
   text-align: center;
+}
+
+.bg-dark .container-tech {
+  background-color: var(--bg);
 }
 
 .container-tech h1 {
@@ -63,21 +83,32 @@
 
 /* Sección Proyectos */
 .container-projects {
+  width: 100vw;
   padding: 2rem;
   background-color: #fff;
   text-align: center;
 }
 
+.bg-dark .container-projects {
+  background-color: var(--bg);
+}
+
 .container-projects h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  color: var(--bg)
 }
 
 /* Sección Inspiración */
 .container-inspiration {
+  width: 100vw;
   padding: 2rem;
   background-color: #f0f0f0;
   text-align: center;
+}
+
+.bg-dark .container-inspiration {
+  background-color: var(--bg);
 }
 
 .container-inspiration h1 {
@@ -85,12 +116,30 @@
   margin-bottom: 1.5rem;
 }
 
+.bg-dark .container-inspiration h1 {
+  color: var(--bg);
+}
+
+.bg-dark .container-inspiration p {
+  color: var(--bg);
+}
+
+
 /* Sección Contacto */
+
 .container-contact {
+  width: 100vw;
   padding: 3rem;
   background-color: #fff;
   text-align: center;
+  
 }
+
+.bg-dark .container-contact {
+  color: var(--bg);
+  background-color: var(--bg);
+}
+
 
 .container-contact h1 {
   font-size: 2.5rem;
@@ -101,6 +150,12 @@
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 2rem;
+}
+
+.bg-dark .container-contact h1 , 
+.bg-dark .container-contact p {
+  color: var(--bg);
+
 }
 
 .contact-content {

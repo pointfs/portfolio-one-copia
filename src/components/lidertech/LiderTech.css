@@ -1,23 +1,25 @@
-
 .lider-tech-wrapper {
   text-align: center;
   padding: 2rem 0;
-  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+
+
 
 .lider-tech-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
   margin-bottom: 2rem;
+  color: var(--text-color);
 }
-
 
 .lider-tech-container {
   width: 80%;
   margin: 0 auto;
+  
 }
-
 
 .tech {
   position: relative;
@@ -32,12 +34,17 @@
   width: 80px;
   height: 80px;
   object-fit: contain;
-  filter: grayscale(100%); 
+  filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
+.bg-dark .tech img {
+  filter: brightness(0.8); /* Ajusta el filtro para hacerlo más oscuro */
+  color: #ccc;
+}
+
 .tech:hover img {
-  filter: grayscale(0); 
+  filter: grayscale(0);
   transform: scale(1.1);
 }
 
@@ -46,61 +53,80 @@
   visibility: hidden;
   position: absolute;
   bottom: -0.25rem;
-  color: #390ca39f;
+  background-color: var(--tooltip-bg);
+  color: var(--tooltip-text);
   text-align: center;
-
   padding: 0.5rem;
+  border-radius: 4px;
   font-size: 0.9rem;
   white-space: nowrap;
-
   transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(2px); 
+  transform: translateY(2px);
   pointer-events: none;
 }
 
 .tech:hover .tooltip-text {
   visibility: visible;
-  
+  opacity: 1;
+  transform: translateY(0);
 }
 
-
+/* Responsividad */
 @media (max-width: 1024px) {
   .lider-tech-container {
-      width: 90%;
+    width: 90%;
   }
 
   .tech img {
-      width: 70px;
-      height: 70px;
+    width: 70px;
+    height: 70px;
   }
 }
 
 @media (max-width: 768px) {
   .lider-tech-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .tech img {
-      width: 60px;
-      height: 60px;
+    width: 60px;
+    height: 60px;
   }
 
   .tooltip-text {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .lider-tech-title {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
   }
 
   .tech img {
-      width: 50px;
-      height: 50px;
+    width: 50px;
+    height: 50px;
   }
 
   .tooltip-text {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 }
+
+/* Variables de Tema Claro */
+.bg-light {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --tooltip-bg: #fff;
+  --tooltip-text: #333;
+}
+
+/* Variables de Tema Oscuro */
+.bg-dark {
+  
+  --text-color: #fff;
+  --tooltip-bg: #313ada7d;
+  --tooltip-text: #fff;
+  
+}
+

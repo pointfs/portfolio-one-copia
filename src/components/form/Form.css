@@ -36,6 +36,10 @@ form {
   gap: 1em;
 }
 
+.bg-dark form {
+  background-color: var(--bg);
+}
+
 input, textarea {
   padding: 0.75em;
   border: 1px solid #ccc;
@@ -49,6 +53,7 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: #0073b1;
   outline: none;
+
 }
 
 /* Botón de Envío */

@@ -1,53 +1,63 @@
+.footer-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 0.75rem 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-footer {
-    background-color: #1f1f1f;
-    color: white;
-    text-align: center;
-    padding: 0.75rem 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-  }
-  
+
+.rrss-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rrss-logos a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.copyright {
+  font-size: 0.75rem;
+  color: var(--text-secondary); 
+}
+
+.copyright p {
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
   .rrss-logos {
-    display: flex;
-    justify-content: center;
-    gap: 1rem; 
-    margin-bottom: 0.5rem; 
-  }
-  
-  .rrss-logos a {
-    color: white;
-    font-size: 1.5rem; 
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .rrss-logos a:hover {
-    color: #ffc107;
-    transform: scale(1.1); 
+    gap: 0.75rem;
   }
 
-  .copyright {
-    font-size: 0.75rem; 
-    color: #cccccc;
+  .rrss-logos a {
+    font-size: 1.25rem;
   }
-  
+
   .copyright p {
-    margin: 0;
+    font-size: 0.7rem;
   }
-  
-  /* Estilos responsivos */
-  @media (max-width: 600px) {
-    .rrss-logos {
-      gap: 0.75rem;
-    }
-  
-    .rrss-logos a {
-      font-size: 1.25rem;
-    }
-  
-    .copyright p {
-      font-size: 0.7rem;
-    }
-  }
-  
+}
+
+
+.bg-light {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --text-secondary: #666;
+}
+
+/* Variables CSS para el tema oscuro */
+.bg-dark {
+  --bg-color: #1f1f1f;
+  --text-color: #fff;
+  --text-secondary: #cccccc;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Slider from "react-slick";
+import { useTheme } from '../../context/ThemeContext';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -30,13 +31,12 @@ const techSkills = [
   { img: figma, name: 'Figma' },
   { img: mysql, name: 'MySQL' },
   { img: salesforce, name: 'Salesforce' },
-  { img: jira, name: 'Jira' },
-  { img: canva, name: 'Canva' },
-  { img: trello, name: 'Trello' },
-  { img: miro, name: 'Miro' },
+
 ];
 
 const LiderTech = () => {
+  const { isDarkMode } = useTheme(); 
+
   const settings = {
     dots: true,
     infinite: true,
@@ -82,7 +82,7 @@ const LiderTech = () => {
   };
 
   return (
-    <div className="lider-tech-wrapper">
+    <div className={`lider-tech-wrapper ${isDarkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
       <h1 className="lider-tech-title">Skills</h1>
       <div className="lider-tech-container">
         <Slider {...settings}>
@@ -103,6 +103,6 @@ const LiderTech = () => {
       </div>
     </div>
   );
-}
+};
 
 export default LiderTech;
