@@ -33,6 +33,56 @@
   animation-delay: calc(0.1s * var(--i)); 
 }
 
+.bg-dark .card {
+  background-color: #7164eb4f;
+  box-shadow: 8px 8px 16px rgba(242, 240, 240, 0.1);
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+.bg-dark .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #5a34b27e, #ff006f6d, #3c0ca3);
+  background-size: 200% 100%; 
+  background-position: 0 0; 
+  border-radius: 12px;
+  z-index: -1;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;  /* El gradiente se mueve completamente hacia la derecha */
+  }
+  100% {
+    background-position: 0 0;  /* Regresa al inicio */
+  }
+}
+
+.bg-dark .card:hover {
+  box-shadow: 12px 12px 24px rgba(242, 240, 240, 0.2);
+  transform: translateY(-5px);
+}
+
+
+.bg-dark .card h2 , .bg-dark .card p {
+  color:#ffffff;
+}
+
+
+
 .card a:hover{
   text-decoration: none;
   background-color: #aba5ab07;
