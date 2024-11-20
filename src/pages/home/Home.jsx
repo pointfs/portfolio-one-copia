@@ -35,7 +35,11 @@ const Home = () => {
         />
         </motion.div>
         <motion.div
-        className='text-overlay'>
+        className='text-overlay'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        >
           <h1>Hola soy Fátima Cosme: Frontend React</h1> 
           <p>Como desarrolladora frontend, domino React, JavaScript, HTML y CSS para crear interfaces dinámicas que conecten con los usuarios.</p>
           <p>Actualmente, estoy aprendiendo Vue y Angular para ampliar mi experiencia, mientras sigo muy enfocada en JS, ya que tener una buena base me parece primordial para seguir creciendo.</p>
