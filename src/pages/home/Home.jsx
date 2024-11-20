@@ -38,7 +38,7 @@ const Home = () => {
         className='text-overlay'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 3 }}
         >
           <h1>Hola soy Fátima Cosme: Frontend React</h1> 
           <p>Como desarrolladora frontend, domino React, JavaScript, HTML y CSS para crear interfaces dinámicas que conecten con los usuarios.</p>
