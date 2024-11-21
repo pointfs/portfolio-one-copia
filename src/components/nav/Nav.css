@@ -66,6 +66,10 @@
   text-decoration: none;
 }
 
+.bg-dark .btn-toggle-theme-btn {
+  background-color: black;
+}
+
 .btn-toggle-theme-btn:hover {
   background-color: rgba(139, 0, 139, 0.173);
   color: #fff;
