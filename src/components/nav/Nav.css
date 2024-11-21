@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2rem;
   width: 100%;
-  height: 5rem;
+  height: 7rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -46,6 +46,48 @@
   font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s ease;
+}
+
+.btn-toggle-theme-btn {
+  border: none;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-toggle-theme-btn:hover {
+  background-color: rgba(139, 0, 139, 0.173);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-toggle-theme-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-toggle-theme-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(139, 0, 139, 0.4);
+}
+
+@media (max-width: 768px) {
+  .btn-toggle-theme-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
 
 

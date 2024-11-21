@@ -179,7 +179,7 @@
   padding: 0.75em 1.5em;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
@@ -189,7 +189,7 @@
   overflow: hidden;
   transition: color 0.2s ease, transform 0.2s ease, background 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(90deg, #3a0ca3, #ff006e, #3a0ca3);
+  background: linear-gradient(90deg, #af15c0, #ff006e, #e309bfe8);
   width: 15vw;
   height: 6rem;
   display: flex;
