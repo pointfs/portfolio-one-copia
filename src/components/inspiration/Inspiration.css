@@ -44,11 +44,11 @@
 	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.front  { transform: rotateY(  0deg) translateZ(100px); background: #ff47ff; }
-.back   { transform: rotateY(180deg) translateZ(100px); background: #7953a3dd; }
+.front  { transform: rotateY(  0deg) translateZ(100px); background: #11111103; }
+.back   { transform: rotateY(180deg) translateZ(100px); background: #19c510e7; }
 .right  { transform: rotateY( 90deg) translateZ(100px); background: #1f5793; }
-.left   { transform: rotateY(-90deg) translateZ(100px); background: #523e6ca7; }
-.top    { transform: rotateX( 90deg) translateZ(100px); background: #6911c7f3; }
+.left   { transform: rotateY(-90deg) translateZ(100px); background: #cf0d2ae3; }
+.top    { transform: rotateX( 90deg) translateZ(100px); background: #ebd404f3; }
 .bottom { transform: rotateX(-90deg) translateZ(100px); background: #7869ff; }
 
 @keyframes rotate {
@@ -70,11 +70,11 @@ a {
   }
 
   a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.155);
   }
 
   a:active {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.479);
   }
 
   @media (max-width: 900px) {
@@ -98,11 +98,11 @@ a {
     }
 
 
-.front  { transform: rotateY(  0deg) translateZ(50px); background: #a047ff; }
-.back   { transform: rotateY(180deg) translateZ(50px); background: #7953a3dd; }
-.right  { transform: rotateY( 90deg) translateZ(50px); background: #af80e1; }
-.left   { transform: rotateY(-90deg) translateZ(50px); background: #523e6ca7; }
-.top    { transform: rotateX( 90deg) translateZ(50px); background: #6911c7f3; }
-.bottom { transform: rotateX(-90deg) translateZ(50px); background: #c169ff; }
+.front  { transform: rotateY(  0deg) translateZ(50px); background: #11111103; }
+.back   { transform: rotateY(180deg) translateZ(50px); background: #19c510e7; }
+.right  { transform: rotateY( 90deg) translateZ(50px); background: #1f5793; }
+.left   { transform: rotateY(-90deg) translateZ(50px); background: #cf0d2ae3; }
+.top    { transform: rotateX( 90deg) translateZ(50px); background: #ebd404f3; }
+.bottom { transform: rotateX(-90deg) translateZ(50px); background: #7869ff; }
 
   }
