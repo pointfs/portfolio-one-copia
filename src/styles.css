@@ -79,7 +79,8 @@
 
 .container-tech h1 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 /* Sección Proyectos */
@@ -96,8 +97,18 @@
 
 .container-projects h1 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--bg)
+  margin-bottom: 1rem;
+  font-weight: 600;
+  
+}
+
+.bg-dark .container-projects h1{
+  color:#f0f0f0;
+}
+
+.bg-light .container-projects p {
+  color:black;
+
 }
 
 /* Sección Inspiración */
@@ -114,7 +125,8 @@
 
 .container-inspiration h1 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .bg-dark .container-inspiration h1 {
@@ -145,6 +157,7 @@
 .container-contact h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .container-contact p {
@@ -181,7 +194,6 @@
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -191,12 +203,21 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background: linear-gradient(90deg, #af15c0, #ff006e, #e309bfe8);
   width: 15vw;
-  height: 6rem;
+  min-width: 120px; 
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 70%;
+  opacity: 80%;
+  font-size: calc(1rem + 0.5vw); 
+  line-height: 1.2; 
+}
 
+.contact-button span {
+  display: block;
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 
@@ -223,27 +244,17 @@
 }
 
 
-@media (max-width: 1024px) {
-  .contact-button {
-    width: 40vw;
-    height: 8rem;
-    font-size: clamp(1rem, 3vw, 1.2rem);
-  }
-}
-
 @media (max-width: 768px) {
   .contact-button {
-    width: 50vw;
-    height: 7rem;
-    font-size: clamp(1rem, 4vw, 1.1rem);
+    width: 60%; 
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .contact-button {
-    width: 70vw;
-    height: 6rem;
-    font-size: clamp(0.9rem, 5vw, 1rem);
+    width: 80%; 
+    font-size: 0.9rem;
   }
 }
 
@@ -268,7 +279,18 @@
   .container-inspiration h1,
   .container-contact h1 {
     font-size: 2rem;
+    font-weight: 600;
   }
+
+
+  .container-tech p,
+  .container-projects p,
+  .container-inspiration p,
+  .container-contact p {
+    font-size: 1rem;
+  }
+
+
 
   .contact-content {
     flex-direction: column;
