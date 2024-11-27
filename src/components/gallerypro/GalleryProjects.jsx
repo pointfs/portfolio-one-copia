@@ -67,7 +67,7 @@ const GalleryProjects = () => {
         </article>
 
         <article className="card">
-          <a href="">
+          <a href="https://github.com/pointfs/NEWSPAPER">
           <h2>NewsPaper</h2>
           </a>
           <p>Plataforma con Sesiones Diferenciadas, CRUD</p>
