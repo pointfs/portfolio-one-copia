@@ -92,7 +92,7 @@ const GalleryProjects = () => {
   <DiTrello size={50} />
 </div>
 
-<img src={Proyecto5} alt="App NewsPaper" />
+<img src={Proyecto3} alt="App NewsPaper" />
 
         </article>
 
