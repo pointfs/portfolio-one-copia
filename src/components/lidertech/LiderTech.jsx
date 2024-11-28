@@ -83,7 +83,7 @@ const LiderTech = () => {
 
   return (
     <div className={`lider-tech-wrapper ${isDarkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
-      <h1 className="lider-tech-title">Skills</h1>
+      <h1 className="lider-tech-title">Stack</h1>
       <div className="lider-tech-container">
         <Slider {...settings}>
           {techSkills.map((tech, index) => (

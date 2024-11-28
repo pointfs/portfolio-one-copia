@@ -76,7 +76,7 @@ const ButtonTech = () => {
 
   return (
     <StyledButton onClick={scrollToTech} aria-label="Ir a la sección de habilidades">
-      <span>Skills</span>
+      <span>Stack</span>
     </StyledButton>
   );
 };

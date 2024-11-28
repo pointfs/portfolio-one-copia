@@ -69,8 +69,8 @@ const Home = () => {
       <div className='contact-content'>
       <img src={Profile} alt="Profile" className='profile-image'/>
       <a href="mailto:contacto@tudominio.com" className="contact-button">
-      Contactar
-    </a>
+          Contactar
+       </a>
       </div>
     </section>
   </>
