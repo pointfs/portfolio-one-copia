@@ -19,7 +19,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.5.4",
     "motion-frame": "^2.0.2",
-    "nodemailer": "^6.9.15",
+    "nodemailer": "^7.0.10",
     "parallax-js": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -37,6 +37,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "vite": "^6.2.0"
   }
 }

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Background from '../../assets/img/wallpaper.jpg';
 import Profile from '../../assets/img/Profile-2.jpg';
 
-
+import Footer from '../../components/footer/Footer';
 import LiderTech from '../../components/lidertech/LiderTech';
 import Form from '../../components/form/Form';
 import GalleryProjects from '../../components/gallerypro/GalleryProjects';
@@ -40,11 +40,11 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
         >
-          <h1>Hola soy Fátima Cosme: Frontend React</h1> 
-          <p>Como desarrolladora frontend, domino React, JavaScript, HTML y CSS para crear interfaces dinámicas que conecten con los usuarios.</p>
-          <p>Actualmente, estoy aprendiendo Vue y Angular para ampliar mi experiencia, mientras sigo muy enfocada en JS, ya que tener una buena base me parece primordial para seguir creciendo.</p>
-          <p> Mi capacidad para comunicarme, liderar y analizar entornos me permite trabajar de manera efectiva en equipo, resolviendo desafíos con creatividad y precisión.</p>
-          <p>Estoy en busca de una oportunidad donde pueda no solo aplicar mis habilidades técnicas, sino también aportar mi visión fresca e implicación para impulsar el éxito de proyectos innovadores. Mi pasión por aprender y crecer es el motor que me lleva a entregar siempre lo mejor de mí.</p>
+          <h1 className="tittle">Hola soy Fátima Cosme: Frontend React</h1> 
+          <p className='descripition'>Como desarrolladora frontend, domino React, JavaScript, HTML y CSS para crear interfaces dinámicas que conecten con los usuarios.</p>
+          <p className='descripition'>Actualmente, estoy aprendiendo Vue y Angular para ampliar mi experiencia, mientras sigo muy enfocada en JS, ya que tener una buena base me parece primordial para seguir creciendo.</p>
+          <p className='descripition'> Mi capacidad para comunicarme, liderar y analizar entornos me permite trabajar de manera efectiva en equipo, resolviendo desafíos con creatividad y precisión.</p>
+          <p className='descripition'>Estoy en busca de una oportunidad donde pueda no solo aplicar mis habilidades técnicas, sino también aportar mi visión fresca e implicación para impulsar el éxito de proyectos innovadores. Mi pasión por aprender y crecer es el motor que me lleva a entregar siempre lo mejor de mí.</p>
       </motion.div>
     </section>
 
@@ -60,9 +60,6 @@ const Home = () => {
       <Inspiration/>
     </section>
 
-
-
-
     <section className='container-contact' id="contact" onClick={handleCardClick}>
       <h1>Contacto</h1>
       <p>Si te gustó mi trabajo o quieres que trabajemos juntos, no dudes en contactarme</p>
@@ -72,6 +69,10 @@ const Home = () => {
           Contactar
        </a>
       </div>
+    </section>
+
+     <section className='container-footer' id="rrss">
+      <Footer/>
     </section>
   </>
   )

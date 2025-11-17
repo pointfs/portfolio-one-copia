@@ -52,7 +52,7 @@
   border: none;
   background-color: #f9f9f9;
   padding: 10px 20px;
-  font-size: 1rem;
+
   font-weight: 600;
   text-transform: uppercase;
   color: #333;
@@ -89,7 +89,7 @@
 
 @media (max-width: 768px) {
   .btn-toggle-theme-btn {
-    font-size: 0.9rem;
+
     padding: 8px 16px;
   }
 }
@@ -131,7 +131,7 @@
   }
 
   .nav-links li button {
-    font-size: 1.25rem;
+
     padding: 1rem;
   }
 }

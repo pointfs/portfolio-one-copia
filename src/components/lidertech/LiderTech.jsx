@@ -46,6 +46,7 @@ const LiderTech = () => {
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: 'linear',
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,

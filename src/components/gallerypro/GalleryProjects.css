@@ -1,6 +1,5 @@
 .title-container-projects {
   text-align: center;
-  font-size: 2.5em;
   margin: 8vw 0 4vw;
   color: #333;
   font-weight: 700;
@@ -11,35 +10,29 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 0 2vw;
+  padding: 2vw;
   background-color: linear-gradient(180deg, rgba(8, 8, 8, 0.608), rgba(225, 215, 215, 0.297), rgb(48, 47, 47));
   
 }
-
 
 
 .card {
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 700px;
   width: 100%;
   text-align: center;
   padding: 1.5rem 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: translateY(30px);
+  transform: translateY(40px);
   animation: fadeInUpCard 0.8s forwards;
   animation-delay: calc(0.1s * var(--i));
 }
 
 
-.card:hover {
-  transform: translateY(-25px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.25);
 }
 
 .bg-dark .card {
@@ -109,9 +102,11 @@
 .bg-dark .card:hover {
   box-shadow: 12px 12px 24px rgba(242, 240, 240, 0.2);
   transform: translateY(-5px);
+ 
 }
 
 .bg-dark .card h2,
+.bg-dark .card h3,
 .bg-dark .card p, 
 .bg-dark .card li, 
 .bg-dark .card ul, 
@@ -129,17 +124,29 @@
 }
 
 .card h2 {
-  font-size: 1.5rem;
+
   color: #333;
   margin-bottom: 1rem;
+}
+
+.goals-projects p{
+  margin: 1.15rem;
+
 }
 
 .tech-icons {
   padding-bottom: 4rem;
 }
 
+.tech-icons span {
+  font-size: 3rem;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+
 .card p {
-  font-size: 1.5rem;
+
   color: #666;
   margin-bottom: 4rem;
 }
@@ -152,75 +159,4 @@
   transition: transform 0.3s ease;
   display: block;
   margin: 0 auto;
-}
-
-.card img:hover {
-  transform: scale(0.8);
-}
-
-@media (max-width: 768px) {
-  .title-container-projects {
-    font-size: 2em;
-  }
-
-  .container-cards {
-    gap: 1.5rem;
-  }
-
-  .card {
-    max-width: 80vw;
-    padding: 1.2rem;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .card ul {
-    margin-left: 1rem;
-  }
-
-  .card img {
-    height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-container-projects {
-    font-size: 1.75em;
-  }
-
-  .card {
-    max-width: 90vw;
-    padding: 1rem;
-  }
-
-  .card h2 {
-    font-size: 1.3rem;
-  }
-
-  .card p {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .card ul {
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .card li {
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .tech-icons {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .card img {
-    height: 100px;
-  }
 }
