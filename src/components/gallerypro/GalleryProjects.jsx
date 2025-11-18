@@ -1,4 +1,3 @@
-import React from 'react';
 import './GalleryProjects.css';
 import { 
   DiApple, DiReact, DiBootstrap, DiCss3, DiHtml5, DiJavascript, 
@@ -30,7 +29,7 @@ const projects = [
     image: Proyecto4,
     alt: "Vinos Premier"
   },
-  
+
   {
     title: "NewsPaper",
     link: "https://github.com/pointfs/NEWSPAPER",
@@ -46,6 +45,7 @@ const projects = [
     image: Proyecto3,
     alt: "NewsPaper App"
   },
+
   {
     title: "App Móvil",
     link: "https://github.com/usuario/proyecto-app-movil",
@@ -54,22 +54,22 @@ const projects = [
     portfolios y currículums, destacando por su interfaz intuitiva.`,
     achievements: [
       "Estudio sobre UX/UI para la optimización de la interfaz",
-      "Investigación sobre la integracion de una app móvil en App Store",
+      "Investigación sobre la integración en App Store",
       "Desarrollo de test y pruebas de vulnerabilidades.",
     ],
     techIcons: [<DiApple />, <DiIllustrator />],
     image: Proyecto5,
     alt: "App Móvil"
   },
+
   {
     title: "WebsPymes",
     link: "https://www.webspymes.es",
     description: "Desarrollo de una web con React",
     details: `Proyecto personal enfocado en soluciones digitales para autónomos y pequeñas empresas, 
     combinando diseño moderno y funcionalidad.`,
-     achievements: [
+    achievements: [
       "Desarrollo completo de la web",
-    
       "Tecnologías: React, Styled Components, Node.js, Jest, Supertest."
     ],
     techIcons: [<DiHtml5 />, <DiCss3 />, <DiJavascript />, <DiReact />],
@@ -78,24 +78,38 @@ const projects = [
   },
 ];
 
-// Componente para renderizar las tarjetas
-const Card = ({ title, link, description, details, achievements, techIcons, image, alt }) => (
-  <article className="card">
+// Componente tarjeta Apple Pro
+const Card = ({
+  title,
+  link,
+  description,
+  details,
+  achievements,
+  techIcons,
+  image,
+  alt,
+  className
+}) => (
+  <article className={`card ${className}`}>
     <a href={link} target="_blank" rel="noopener noreferrer">
       <h2>{title}</h2>
     </a>
+
     <div className="card-description-projects">
       <h3>{description}</h3>
       <p>{details}</p>
-     
     </div>
+
     <div className="tech-icons">
       {techIcons.map((icon, index) => (
         <span key={index}>{icon}</span>
       ))}
     </div>
+
     <img src={image} alt={alt} />
-     <div className="goals-projects">{achievements && (
+
+    <div className="goals-projects">
+      {achievements && (
         <>
           <p><strong>Logros clave:</strong></p>
           <ul>
@@ -103,20 +117,24 @@ const Card = ({ title, link, description, details, achievements, techIcons, imag
               <li key={index}>{item}</li>
             ))}
           </ul>
-          
         </>
       )}
-  </div>
+    </div>
   </article>
 );
 
 const GalleryProjects = () => {
   return (
-    <section className="projects-container">
-      <h1 className="title-container-projects">Proyectos</h1>
-      <div className="container-cards">
+    <section className="projects-apple-container">
+      <h1 className="projects-apple-title">Proyectos</h1>
+
+      <div className="projects-apple-grid">
         {projects.map((project, index) => (
-          <Card key={index} {...project} />
+          <Card
+            key={index}
+            {...project}
+            className={`card-${index + 1}`}
+          />
         ))}
       </div>
     </section>

@@ -22,7 +22,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="copyright">
-        <p>Made in Fátima Cosme 2025</p>
+        <p>Hecho por Fátima Cosme 2025</p>
       </div>
     </footer>
   );

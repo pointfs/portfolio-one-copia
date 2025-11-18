@@ -1,51 +1,76 @@
-.footer-container a{
-  display: flex;
-  color: var(--text-color);
-  text-align: center;
-  padding: 0.75rem 0;
-  position: relative;
+/* ================================
+   FOOTER APPLE PRO – Fátima Cosme
+   ================================ */
+
+/* ---- CONTENEDOR GENERAL ---- */
+.footer-container {
   width: 100%;
-  bottom: 0;
-  
-}
-
-
-.rrss-logos {
+  padding: 2rem 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 0.5rem;
-  height: fit-content;
 
+  /* Suavidad Apple */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.footer-container a :hover {
-  background-color: rgb(239, 238, 238);
-  color:#000000;
-  width: 100px;
-
-}
-
-
-.copyright {
-
-  color: var(--text-secondary); 
-}
-
-.copyright p {
-  margin: 0;
-}
-
-
+/* ---- Modo Claro (ya controlas bg-light text-dark) ---- */
 .bg-light {
-  --bg-color: #f9f9f9;
-  --text-color: #333;
-  --text-secondary: #666;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-/* Variables CSS para el tema oscuro */
+/* ---- Modo Oscuro ---- */
 .bg-dark {
-  
-  --text-color: #fff;
-  --text-secondary: #cccccc;
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ---- LOGOS RRSS ---- */
+.rrss-logos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.rrss-logos a {
+  font-size: 1.8rem;
+  opacity: 0.65;
+  color: inherit;
+  transition: opacity 0.25s ease, transform 0.3s ease;
+}
+
+/* Animación Apple */
+.rrss-logos a:hover {
+  opacity: 1;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* ---- COPYRIGHT ---- */
+.footer-container .copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+/* Animación sutil al pasar el mouse */
+.footer-container:hover .copyright p {
+  opacity: 1;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 600px) {
+  .rrss-logos {
+    gap: 1rem;
+  }
+  .rrss-logos a {
+    font-size: 1.5rem;
+  }
+  .footer-container {
+    padding: 1.5rem 0;
+  }
 }
