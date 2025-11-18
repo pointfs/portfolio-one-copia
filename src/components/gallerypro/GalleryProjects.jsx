@@ -30,21 +30,7 @@ const projects = [
     image: Proyecto4,
     alt: "Vinos Premier"
   },
-  {
-    title: "App Móvil",
-    link: "https://github.com/usuario/proyecto-app-movil",
-    description: "Desarrollo de una app con Swift",
-    details: `Proyecto individual en el que desarrollé una app para generar plantillas personalizables de 
-    portfolios y currículums, destacando por su interfaz intuitiva.`,
-    achievements: [
-      "Estudio sobre UX/UI para la optimización de la interfaz",
-      "Investigación sobre la integracion de una app móvil en App Store",
-      "Desarrollo de test y pruebas de vulnerabilidades.",
-    ],
-    techIcons: [<DiApple />, <DiIllustrator />],
-    image: Proyecto5,
-    alt: "App Móvil"
-  },
+  
   {
     title: "NewsPaper",
     link: "https://github.com/pointfs/NEWSPAPER",
@@ -59,6 +45,21 @@ const projects = [
     techIcons: [<DiReact />, <DiCss3 />, <DiJavascript />, <DiMysql />, <DiNodejs />, <DiTrello />],
     image: Proyecto3,
     alt: "NewsPaper App"
+  },
+  {
+    title: "App Móvil",
+    link: "https://github.com/usuario/proyecto-app-movil",
+    description: "Desarrollo de una app con Swift",
+    details: `Proyecto individual en el que desarrollé una app para generar plantillas personalizables de 
+    portfolios y currículums, destacando por su interfaz intuitiva.`,
+    achievements: [
+      "Estudio sobre UX/UI para la optimización de la interfaz",
+      "Investigación sobre la integracion de una app móvil en App Store",
+      "Desarrollo de test y pruebas de vulnerabilidades.",
+    ],
+    techIcons: [<DiApple />, <DiIllustrator />],
+    image: Proyecto5,
+    alt: "App Móvil"
   },
   {
     title: "WebsPymes",
