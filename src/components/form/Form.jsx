@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Importa EmailJS
 import './Form.css';
 
 const Form = () => {
@@ -9,6 +10,7 @@ const Form = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -34,8 +36,22 @@ const Form = () => {
     event.preventDefault();
     const formErrors = validate();
     if (Object.keys(formErrors).length === 0) {
-      alert('Formulario enviado!');
-      // Aquí puedes manejar el envío del formulario
+      // Configura EmailJS
+      emailjs.send(
+        'TU_SERVICE_ID', // Reemplaza con tu Service ID de EmailJS
+        'TU_TEMPLATE_ID', // Reemplaza con tu Template ID de EmailJS
+        formData,
+        'TU_USER_ID' // Reemplaza con tu User ID de EmailJS
+      )
+      .then((response) => {
+        console.log('Correo enviado:', response.status, response.text);
+        setIsSubmitted(true); // Muestra un mensaje de éxito
+      })
+      .catch((error) => {
+        console.error('Error al enviar el correo:', error);
+      });
+      
+      setFormData({ nombre: '', email: '', mensaje: '' }); // Limpia el formulario
     } else {
       setErrors(formErrors);
     }
@@ -43,6 +59,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      {isSubmitted && <p className="success-message">¡Formulario enviado con éxito!</p>}
       <div>
         <input
           type='text'
@@ -72,9 +89,8 @@ const Form = () => {
         ></textarea>
         {errors.mensaje && <span className='error'>{errors.mensaje}</span>}
       </div>
-      <button type='submit'>Enviar</button>
+      <button className='button-form-mail' type='submit'>Enviar</button>
     </form>
-
   );
 }
 

@@ -1,40 +1,91 @@
-/* LiderTech.css */
 .lider-tech-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-.lider-tech-title {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    color:black; 
-    font-size: 2.5em; 
-    text-align: center;
-    padding:6vw;
-  }
+  text-align: center;
+  padding: 2rem 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+
+.lider-tech-title {
+
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
 
 .lider-tech-container {
-    width: 100vw;
-    overflow: hidden;
-    margin-top:15vw;
-    margin-bottom: 3vw;
-  }
+  width: 80%;
+  margin: 0 auto;
   
-  .tech {
-    
-    gap: 2rem;
-    height: 10rem;
+}
 
-  }
+.tech {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.tech img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.bg-dark .tech img {
+  filter: brightness(0.8); /* Ajusta el filtro para hacerlo más oscuro */
+  color: #ccc;
+}
+
+.tech:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  bottom: -0.25rem;
+  background-color: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(2px);
+  pointer-events: none;
+}
+
+.tech:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* Variables de Tema Claro */
+.bg-light {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --tooltip-bg: #fff;
+  --tooltip-text: #333;
+}
+
+/* Variables de Tema Oscuro */
+.bg-dark {
   
-  .tech img {
-    width: 6vw;
-    height: auto;
-  }
+  --text-color: #fff;
+  --tooltip-bg: #313ada7d;
+  --tooltip-text: #fff;
+  
+}
 
- 

@@ -11,22 +11,22 @@ function Inspiration() {
       <div className="scene">
         <div className="cube">
           <div className="face front">
-            <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer">
+            <a href="https://bestwebsite.gallery/" target="_blank" rel="bestwebsite.gallery">
             
             </a>
           </div>
           <div className="face back">
-            <a href="https://stackoverflow.com" target="_blank" rel="stackoverflow">
+            <a href="https://www.seesaw.website" target="_blank" rel="seesaw">
               
             </a>
           </div>
           <div className="face right">
-            <a href="https://github.com/kovaxis" target="_blank" rel="kovaxis">
+            <a href="https://www.awwwards.com" target="_blank" rel="awwwards">
               
             </a>
           </div>
           <div className="face left">
-            <a href="https://www.cisinformatica.cat/es/margaret-hamilton-biografia-logros/" target="_blank" rel="hamilton">
+            <a href="https://atelierdesign.be" target="_blank" rel="atelierdesign">
               
             </a>
           </div>

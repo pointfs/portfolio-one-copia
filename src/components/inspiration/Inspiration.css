@@ -5,7 +5,7 @@
 
   .container-inspiration-cube h1 {
     color:black; 
-    font-size: 2.5em; 
+
     text-align: center;
     padding:3vw;
     
@@ -13,7 +13,7 @@
 
   .container-inspiration-cube p {
     color:black; 
-    font-size: 1.5em; 
+
     text-align: center;
     padding-bottom: 6vw;
     
@@ -24,7 +24,7 @@
 	height: 200px;
 	transform-style: preserve-3d;
 	animation: rotate 20s infinite linear;
-    margin:0 auto;
+  margin:0 auto;
 }
 
 .cube {
@@ -44,12 +44,12 @@
 	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.front  { transform: rotateY(  0deg) translateZ(100px); background: #a047ff; }
-.back   { transform: rotateY(180deg) translateZ(100px); background: #7953a3dd; }
-.right  { transform: rotateY( 90deg) translateZ(100px); background: #af80e1; }
-.left   { transform: rotateY(-90deg) translateZ(100px); background: #523e6ca7; }
-.top    { transform: rotateX( 90deg) translateZ(100px); background: #6911c7f3; }
-.bottom { transform: rotateX(-90deg) translateZ(100px); background: #c169ff; }
+.front  { transform: rotateY(  0deg) translateZ(100px); background: #11111103; }
+.back   { transform: rotateY(180deg) translateZ(100px); background: #19c510e7; }
+.right  { transform: rotateY( 90deg) translateZ(100px); background: #1f5793; }
+.left   { transform: rotateY(-90deg) translateZ(100px); background: #cf0d2ae3; }
+.top    { transform: rotateX( 90deg) translateZ(100px); background: #ebd404f3; }
+.bottom { transform: rotateX(-90deg) translateZ(100px); background: #7869ff; }
 
 @keyframes rotate {
 	0% {
@@ -66,5 +66,15 @@ a {
     height: 100%;
     color: white;
     text-decoration: none;
-    line-height: 200px; /* Centra el texto verticalmente */
+    line-height: 200px;
   }
+
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.155);
+  }
+
+  a:active {
+    background-color: rgba(0, 0, 0, 0.479);
+  }
+
+  

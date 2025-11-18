@@ -1,0 +1,153 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+  height: 7rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos del menú hamburguesa */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: currentColor; 
+  transition: transform 0.3s ease;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li button {
+  background: none;
+  border: none;
+  color: currentColor; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-toggle-theme-btn {
+  border: none;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.bg-dark .btn-toggle-theme-btn {
+  background-color: black;
+}
+
+.btn-toggle-theme-btn:hover {
+  background-color: rgba(139, 0, 139, 0.173);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-toggle-theme-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-toggle-theme-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(139, 0, 139, 0.4);
+}
+
+@media (max-width: 768px) {
+  .btn-toggle-theme-btn {
+
+    padding: 8px 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar {
+    max-height: 4.75rem;
+  }
+
+  .nav-links {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 50%;
+    background-color: var(--bg-color); 
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li button {
+
+    padding: 1rem;
+  }
+}
+
+
+.bg-light {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.bg-dark {
+  --bg-color: #1f1f1f;
+  --text-color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
